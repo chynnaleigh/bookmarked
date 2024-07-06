@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5646842C38FEB900D0D54A /* DummyController_deleteme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5646832C38FEB900D0D54A /* DummyController_deleteme.swift */; };
 		9C57AFD22C363F9C0068DBE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AFD12C363F9C0068DBE7 /* AppDelegate.swift */; };
 		9C57AFD42C363F9C0068DBE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AFD32C363F9C0068DBE7 /* SceneDelegate.swift */; };
 		9C57AFD62C363F9C0068DBE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AFD52C363F9C0068DBE7 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C5646832C38FEB900D0D54A /* DummyController_deleteme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyController_deleteme.swift; sourceTree = "<group>"; };
 		9C57AFCE2C363F9C0068DBE7 /* BookMarked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMarked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C57AFD12C363F9C0068DBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C57AFD32C363F9C0068DBE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				9CE7FA372C38F6E800D49033 /* LoginViewController.swift */,
 				9CE7FA352C38F6CA00D49033 /* SignupViewController.swift */,
 				9C7CB1362C379F3E00C19E36 /* WelcomeViewController.swift */,
+				9C5646832C38FEB900D0D54A /* DummyController_deleteme.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				9C57AFD62C363F9C0068DBE7 /* ViewController.swift in Sources */,
 				9C7CB1372C379F3E00C19E36 /* WelcomeViewController.swift in Sources */,
 				9C57AFD22C363F9C0068DBE7 /* AppDelegate.swift in Sources */,
+				9C5646842C38FEB900D0D54A /* DummyController_deleteme.swift in Sources */,
 				9C57AFD42C363F9C0068DBE7 /* SceneDelegate.swift in Sources */,
 				9C57AFE92C3640E60068DBE7 /* Utils.swift in Sources */,
 			);
