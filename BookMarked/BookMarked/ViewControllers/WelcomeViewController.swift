@@ -110,7 +110,7 @@ class WelcomeViewController: UIViewController {
         
         view.addSubview(welcomeImage)
         NSLayoutConstraint.activate([
-            welcomeImage.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            welcomeImage.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 60),
             welcomeImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70),
             welcomeImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             welcomeImage.widthAnchor.constraint(equalToConstant: 125),
@@ -125,18 +125,18 @@ class WelcomeViewController: UIViewController {
         
         view.addSubview(buttonStack)
         NSLayoutConstraint.activate([
-            buttonStack.topAnchor.constraint(equalTo: labelStack.bottomAnchor, constant: 150),
+            buttonStack.topAnchor.constraint(equalTo: labelStack.bottomAnchor, constant: 85),
             buttonStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
         ])
     }
     
     @objc func startReadingTapped() {
-//        let vc = LoginViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = LoginViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func createAccountTapped() {
-//        let vc = SignupViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = SignupViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
