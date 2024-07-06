@@ -20,15 +20,17 @@ class WelcomeViewController: UIViewController {
     
     lazy var welcomeImage: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "welcomeImage")
+        iv.image = UIImage(named: "welcomeimage")
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
     
     lazy var subheaderLabel: UILabel = {
         let label = UILabel()
-        label.text = "Enter a world,where every page counts!"
-        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.text = "Enter a world,\nwhere every page counts!"
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -36,8 +38,10 @@ class WelcomeViewController: UIViewController {
     lazy var statementLabel: UILabel = {
         let label = UILabel()
         label.text = "Let’s make a habit of reading and track \nyour reading journey together"
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 16, weight: .thin)
         label.translatesAutoresizingMaskIntoConstraints = false
-        //label.numberOfLines = 0
         return label
     }()
     
@@ -46,9 +50,8 @@ class WelcomeViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.addArrangedSubview(subheaderLabel)
-        //stackView.addArrangedSubview(subheaderLabelTwo)
         stackView.addArrangedSubview(statementLabel)
-        stackView.spacing = 20
+        stackView.spacing = 10
         stackView.alignment = .leading
         return stackView
     }()
@@ -59,8 +62,8 @@ class WelcomeViewController: UIViewController {
         button.setTitle("Start Reading", for: .normal)
         button.backgroundColor = UIColor(hexString: "#FF9900", alpha: 1.0)
         button.layer.cornerRadius = 20
-        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 300).isActive = true
         button.layer.shadowOpacity = 0.5
         button.layer.shadowColor = UIColor.lightGray.cgColor
         button.addTarget(self, action: #selector(startReadingTapped), for: .touchUpInside)
@@ -73,12 +76,23 @@ class WelcomeViewController: UIViewController {
         button.setTitle("Create an account", for: .normal)
         button.backgroundColor = UIColor(hexString: "#FEC064", alpha: 1.0)
         button.layer.cornerRadius = 20
-        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 300).isActive = true
         button.layer.shadowOpacity = 0.5
         button.layer.shadowColor = UIColor.lightGray.cgColor
         button.addTarget(self, action: #selector(createAccountTapped), for: .touchUpInside)
         return button
+    }()
+    
+    lazy var buttonStack:  UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.addArrangedSubview(startButton)
+        stackView.addArrangedSubview(createAccountButton)
+        stackView.spacing = 20
+        stackView.alignment = .leading
+        return stackView
     }()
     
     override func viewDidLoad() {
@@ -107,18 +121,22 @@ class WelcomeViewController: UIViewController {
         NSLayoutConstraint.activate([
             labelStack.topAnchor.constraint(equalTo: welcomeImage.bottomAnchor, constant: 20),
             labelStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            labelStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            labelStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+        
+        view.addSubview(buttonStack)
+        NSLayoutConstraint.activate([
+            buttonStack.topAnchor.constraint(equalTo: labelStack.bottomAnchor, constant: 150),
+            buttonStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
         ])
     }
     
     @objc func startReadingTapped() {
-        let vc = LoginViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = LoginViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func createAccountTapped() {
-        let vc = LoginViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = SignupViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

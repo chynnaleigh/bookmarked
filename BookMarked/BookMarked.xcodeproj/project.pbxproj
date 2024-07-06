@@ -15,8 +15,6 @@
 		9C57AFDE2C363F9D0068DBE7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9C57AFDD2C363F9D0068DBE7 /* Base */; };
 		9C57AFE92C3640E60068DBE7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C57AFE82C3640E50068DBE7 /* Utils.swift */; };
 		9C7CB1372C379F3E00C19E36 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7CB1362C379F3E00C19E36 /* WelcomeViewController.swift */; };
-		9C7CB1392C37A67100C19E36 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7CB1382C37A67100C19E36 /* SignupViewController.swift */; };
-		9C7CB13B2C37A68800C19E36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7CB13A2C37A68800C19E36 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +28,6 @@
 		9C57AFDF2C363F9D0068DBE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C57AFE82C3640E50068DBE7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9C7CB1362C379F3E00C19E36 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		9C7CB1382C37A67100C19E36 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		9C7CB13A2C37A68800C19E36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				9C7CB1362C379F3E00C19E36 /* WelcomeViewController.swift */,
-				9C7CB1382C37A67100C19E36 /* SignupViewController.swift */,
-				9C7CB13A2C37A68800C19E36 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,8 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7CB13B2C37A68800C19E36 /* LoginViewController.swift in Sources */,
-				9C7CB1392C37A67100C19E36 /* SignupViewController.swift in Sources */,
 				9C57AFD62C363F9C0068DBE7 /* ViewController.swift in Sources */,
 				9C7CB1372C379F3E00C19E36 /* WelcomeViewController.swift in Sources */,
 				9C57AFD22C363F9C0068DBE7 /* AppDelegate.swift in Sources */,
