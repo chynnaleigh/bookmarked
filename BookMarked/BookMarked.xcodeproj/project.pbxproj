@@ -64,8 +64,6 @@
 		9C57AFD02C363F9C0068DBE7 /* BookMarked */ = {
 			isa = PBXGroup;
 			children = (
-				9C57AFE52C3640700068DBE7 /* Data */,
-				9C57AFEA2C36412A0068DBE7 /* Components */,
 				9C57AFE72C36408B0068DBE7 /* ViewControllers */,
 				9C57AFE62C3640810068DBE7 /* Utils */,
 				9C57AFD12C363F9C0068DBE7 /* AppDelegate.swift */,
@@ -77,13 +75,6 @@
 				9C57AFDF2C363F9D0068DBE7 /* Info.plist */,
 			);
 			path = BookMarked;
-			sourceTree = "<group>";
-		};
-		9C57AFE52C3640700068DBE7 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		9C57AFE62C3640810068DBE7 /* Utils */ = {
@@ -102,13 +93,6 @@
 				9C7CB1362C379F3E00C19E36 /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		9C57AFEA2C36412A0068DBE7 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
